@@ -13,7 +13,7 @@ app.use(bodyparser.json()); // my appliction or my backend will understand the j
 app.use(morgan('tiny'));
 app.use('/api/v1/products',productsRouter);
 app.use('/api/v1/categories',categoryRouter);
-mongoose.connect('mongodb+srv://salmamelbanna:salma22281533@cluster0.kfowmi1.mongodb.net/eshop-database?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
+mongoose.connect('mongodb+srv://salmamelbanna:<password>@cluster0.kfowmi1.mongodb.net/eshop-database?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
     app.listen(4000,()=>{
         console.log('http://localhost:4000/api/v1/products');
     })
